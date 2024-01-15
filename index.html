@@ -4,22 +4,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy!</title>
-	<link rel="canonical" href="https://www.siegemedia.com/contrast-ratio" />
+	<link rel="canonical" href="https://contrast-ratio.org" />
 	<link rel="stylesheet" href="style.css" />
 	<link rel="shortcut icon" type="image/png" href="about:blank" />
 
 </head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NL5QBPSX6M"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
-
-	gtag('config', 'G-NL5QBPSX6M');
-</script>
-
 <body>
-
 	<h1><a href="#">
 			<div><span>Contrast</span></div>
 			<div><strong>ratio</strong></div>
@@ -68,35 +58,27 @@
 		<footer>
 			By <a href="http://lea.verou.me" rel="noopener" target="_blank">Lea Verou</a>
 			&bull; <a href="https://www.w3.org/TR/WCAG/#contrast-minimum" rel="noopener" target="_blank">WCAG 2.1 on contrast
-				ratio</a>
+				ratio</a><br>
+				Reuploaded old version by <a href="https://moritzgiessmann.de">Moritz Gießmann</a>
 
 		</footer>
 	</section>
 	<section class="color-display" id="foregroundDisplay">
 		<button id="swap">↔ Swap colors</button>
 	</section>
-	<div class="siege-media-cta">
-		<a href="https://www.siegemedia.com">
-			<img src="./sm-logo.svg" class="siege-media-logo" alt="Siege Media logo" />
-		</a>
-		<div>
-			<p>Contrast Ratio will soon be moving and improving! See us soon on Siege Media.</p>
-			<p class="siege-link"><b><a href="https://www.siegemedia.com">Learn About Siege Media</a></b></p>
-		</div>
-	</div>
 	<footer></footer>
-
-	<script src="https://leaverou.github.io/incrementable/incrementable.js" id="incrementable" async></script>
+	<!-- Original at: https://leaverou.github.io/incrementable/incrementable.js -->
+	<script src="lerverou-incrementable.js" id="incrementable" async></script>
 	<script src="color.js"></script>
 	<script src="contrast-ratio.js"></script>
 
 	<div class="social">
-		<a class="github-button" href="https://github.com/siege-media/contrast-ratio" data-icon="octicon-star"
+		<a class="github-button" href="https://github.com/MoritzGiessmann/contrast-ratio" data-icon="octicon-star"
 			data-size="large" data-show-count="true" aria-label="Star siege-media/contrast-ratio on GitHub">Star</a>
 	</div>
 
 	<!-- Place this tag in your head or just before your close body tag. -->
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<script async defer src="github-button.js"></script>
 </body>
 
 </html>
