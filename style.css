@@ -392,3 +392,7 @@ output.rl {
 .siege-link {
 	line-height: 1px;
 }
+
+footer img {
+	vertical-align: middle;
+}
