@@ -25,32 +25,32 @@ body > h1 {
 	line-height: 1.3;
 }
 
-    body > h1 a {
+    body > h1 .wrapper{
         display: flex;
     }
 
-        body > h1 div {
-            flex: 1 1 0px;
+        body > h1 .inner {
+            flex: 1 1 0;
         }
 
-        body > h1 div:first-child {
+        body > h1 .inner:first-child {
             text-align: right;
         }
 
-        body > h1 div:last-child {
+        body > h1 .inner:last-child {
             text-align: left;
         }
 
-            body > h1 div > * {
-                padding: .1em .4em;
+            body > h1 .inner > * {
+                padding: .2em .4em .1em .4em;
             }
 
-            body > h1 span {
+            body > h1 .first {
                 background: black;
                 color: white;
             }
 
-            body > h1 strong {
+            body > h1 .second {
                 background: white;
                 color: black;
             }
@@ -59,7 +59,7 @@ label {
 	position: absolute;
 }
 
-	label > span {
+	label > .text {
 		display: inline-block;
 		padding: .2em .5em;
 		border-radius: .3em .3em 0 0;
@@ -74,7 +74,7 @@ label {
 		text-align: left;
 	}
 
-		label.background > span {
+		label.background > .text {
 			margin-left: 1em;
 		}
 
@@ -181,7 +181,7 @@ label {
 	padding: 13em 1em 1em;
 }
 
-	.color-display h1,
+	.color-display h2,
 	.color-display p {
 		max-width: 30rem;
 		margin-top: 0;
@@ -307,35 +307,6 @@ canvas {
 	display: none;
 }
 
-#carbonads {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-	width: 350px;
-	padding: .5em;
-	border-radius: 2px;
-	background: hsla(0,0%,100%,.8);
-	border: 1px solid rgba(0,0,0,.1);
-	font-size: 60%;
-
-}
-
-@media (max-width: 750px) {
-	#carbonads {
-		display: none;
-	}
-}
-
-	#carbonads img {
-		float: left;
-		margin-right: .8em
-	}
-
-	.carbon-poweredby {
-		display: block;
-		opacity: .5;
-	}
-
 output.rl {
 	display: block;
 	margin: .5em 0 0 1em;
@@ -364,34 +335,6 @@ output.rl {
 		color: hsl(220, 10%, 40%);
 		text-transform: uppercase;
 	}
-.siege-media-cta {
-	display: flex;
-	position: absolute;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	bottom: 0;
-	right: 0;
-	width: 367px;
-	height: 120px;
-	background-color: white;
-	text-align: left;
-}
-
-.siege-media-logo {
-	border: 0.5em solid white;
-	height: 96px;
-	width: 96px;
-}
-
-.siege-media-cta > div {
-	font-size: clamp(14px, 1.5vw, 17px);
-	line-height: 22px;
-	color: #333333;
-}
-
-.siege-link {
-	line-height: 1px;
-}
 
 footer img {
 	vertical-align: middle;

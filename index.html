@@ -7,30 +7,32 @@
 	<title>Contrast Ratio: WCAG Color Contrast Checker 🚀</title>
 	<link rel="canonical" href="https://contrast-ratio.org" />
 	<link rel="stylesheet" href="style.css" />
-	<link rel="shortcut icon" type="image/png" href="about:blank" />
-
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<h1><a href="#">
-			<div><span>Contrast</span></div>
-			<div><strong>ratio</strong></div>
-		</a></h1>
+	<h1>
+        <span class="wrapper">
+			<span class="inner"><span class="first">Contrast</span></span>
+			<span class="inner"><strong class="second">ratio</strong></span>
+		</span>
+    </h1>
 
 	<label class="background">
-		<span>Background:</span>
-		<div class="input-wrapper">
+		<span class="text">Background:</span>
+		<span class="input-wrapper">
 			<input id="background" class="text-input" value="white" autofocus />
 			<input id="backgroundColorPicker" class="color-picker" type="color" tabindex="-1" />
-		</div>
+		</span>
 		<output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
 	</label>
 
 	<label class="foreground">
-		<span>Text color:</span>
-		<div class="input-wrapper">
+		<span class="text">Text color:</span>
+		<span class="input-wrapper">
 			<input id="foreground" class="text-input" value="hsla(200,0%,0%,.7)" />
 			<input id="foregroundColorPicker" class="color-picker" type="color" tabindex="-1" />
-		</div>
+		</span>
 		<output for="background foreground" class="rl" aria-live="polite" aria-label="Relative Luminance"></output>
 	</label>
 
@@ -45,7 +47,7 @@
 	</section>
 
 	<section class="color-display" id="backgroundDisplay">
-		<h1>How to use</h1>
+		<h2>How to use</h2>
 		<p>As you type, the contrast ratio indicated will update. Hover over the circle to get more detailed information.
 			When semi-transparent colors are involved as backgrounds, the contrast ratio will have an error margin, to account
 			for the different colors they may be over.</p>
@@ -57,12 +59,12 @@
 		<p style="font-size: 11pt;"><strong>Hint:</strong> Press the up and down keyboard arrows while over a number inside
 			a functional color notation. Watch it increment/decrement. Try with the Shift or Alt key too!</p>
 		<footer>
-			By <a href="http://lea.verou.me" rel="noopener" target="_blank">Lea Verou</a>
+			By <a href="https://lea.verou.me" rel="noopener" target="_blank">Lea Verou</a>
 			&bull; <a href="https://www.w3.org/TR/WCAG/#contrast-minimum" rel="noopener" target="_blank">WCAG 2.1 on contrast
 				ratio</a><br>
 				Reuploaded old version by <a href="https://moritzgiessmann.de">Moritz Gießmann</a><br>
 				<a href="https://ko-fi.com/J3J3JAWO1" target="_blank" class="kofi-link">
-					<img height="36" src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" border="0" alt="Buy Me a Coffee at ko-fi.com">
+					<img height="36" src="https://storage.ko-fi.com/cdn/kofi3.png?v=3" alt="Buy Me a Coffee at ko-fi.com">
 				</a>Support me hosting this
 
 
@@ -79,24 +81,24 @@
 
 	<div class="social">
 		<a class="github-button" href="https://github.com/MoritzGiessmann/contrast-ratio" data-icon="octicon-star"
-			data-size="large" data-show-count="true" aria-label="Star siege-media/contrast-ratio on GitHub">Star</a>
+			data-size="large" data-show-count="true" aria-label="Contrast-ratio on GitHub">Star</a>
 	</div>
 
 	<script async defer src="github-button.js"></script>
 
 	<!-- Matomo -->
 	<script>
-		var _paq = window._paq = window._paq || [];
+		let _paq = window._paq = window._paq || [];
 		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 		_paq.push(["setDoNotTrack", true]);
 		_paq.push(["disableCookies"]);
 		_paq.push(['trackPageView']);
 		_paq.push(['enableLinkTracking']);
 		(function() {
-		var u="https://m0g1.uber.space/piwik/";
+		let u="https://m0g1.uber.space/piwik/";
 		_paq.push(['setTrackerUrl', u+'matomo.php']);
 		_paq.push(['setSiteId', '15']);
-		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		let d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
 		})();
 	</script>
